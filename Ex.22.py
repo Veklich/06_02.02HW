@@ -11,10 +11,8 @@ set_n = set()
 set_m = set()
 for i in range(n):
     set_n.add(int(input('Vvodite znacheniya PERVOGO nabora: ')))
-print(sorted(set_n))
 print()
 for i in range(m):
     set_m.add(int(input('Vvodite znacheniya VTOROGO nabora: ')))
-print(sorted(set_m))
 set_n.update(set_m)
-print(sorted(set_n))
+print(*sorted(set_n))
